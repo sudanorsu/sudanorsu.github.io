@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/sudanorsu/sudanorsu.github.io</id>
+    <title>sunday小憩</title>
+    <updated>2023-02-24T01:59:41.781Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/sudanorsu/sudanorsu.github.io"/>
+    <link rel="self" href="https://github.com/sudanorsu/sudanorsu.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://github.com/sudanorsu/sudanorsu.github.io/images/avatar.png</logo>
+    <icon>https://github.com/sudanorsu/sudanorsu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, sunday小憩</rights>
+    <entry>
+        <title type="html"><![CDATA[杂谈]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/za-tan/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/za-tan/">
+        </link>
+        <updated>2023-02-23T09:48:44.000Z</updated>
+        <content type="html"><![CDATA[<p>华为可信考试科目：<br>
+科目一：上级编程，对比力扣2道中等、1道困难；<br>
+科目二：编程知识与应用，考察基础的编程语言知识等；<br>
+科目三：安全编程、质量、隐私，还有开发者测试等；<br>
+科目四：重构知识，包括设计模式、代码重构等。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日工作]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/mei-ri-gong-zuo/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/mei-ri-gong-zuo/">
+        </link>
+        <updated>2023-02-23T06:03:13.000Z</updated>
+        <content type="html"><![CDATA[<p>#2023/02/24<br>
+1：感知评测：<br>
+①评测流程：真值数据集，回灌生成评测数据集，模型评估。进行整理形成流水线<br>
+2：安亭上盘机测试上盘服务功能：<br>
+①仿真zip；仿真log；bag wav；</p>
+<p>#2023/02/23<br>
+1：修复record的版本到第五个版本：<br>
+① 将从挂载目录中取文件改成：利用s3的sdk下载文件<br>
+② 将数据上传至挂载目录改成：利用oss2的sdk上传文件<br>
+2：测试上盘服务功能：<br>
+①：增加仿真文件上传 ，增加2个类型：SIM_LOG SIM_CSV<br>
+②：增加WAV文件上传</p>
+<p>#---------------待办：--------------------<br>
+1：标注数据中 camera数据 xxx.jpg 名字，与lidar中xxxx.jpg 名字不一致，需要修改data-cloud的镜像脚本<br>
+2：新的clip数据待送标需要上传1份</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一篇博客]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/di-yi-pian-bo-ke/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/di-yi-pian-bo-ke/">
+        </link>
+        <updated>2023-02-21T06:02:04.000Z</updated>
+        <content type="html"><![CDATA[<p>这是我的世界</p>
+<p>我的github token ：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</p>
+]]></content>
+    </entry>
+</feed>
