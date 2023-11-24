@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/sudanorsu/sudanorsu.github.io</id>
+    <title>sunday小憩</title>
+    <updated>2023-11-24T07:01:31.764Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/sudanorsu/sudanorsu.github.io"/>
+    <link rel="self" href="https://github.com/sudanorsu/sudanorsu.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://github.com/sudanorsu/sudanorsu.github.io/images/avatar.png</logo>
+    <icon>https://github.com/sudanorsu/sudanorsu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, sunday小憩</rights>
+    <entry>
+        <title type="html"><![CDATA[待办事情]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/dai-ban-shi-qing/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/dai-ban-shi-qing/">
+        </link>
+        <updated>2023-06-12T05:46:38.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<p>1:自动标注 以图搜图 图像处理</p>
+<p>---------工作-------<br>
+https://ones.saic-ailab.com/wiki/#/team/TKeWdcyv/space/UXrKbtk5/page/9s27d5EY<br>
+apal_common_base:2.0.4c镜像跨容器通信问题的解决方法如上，请大家查收！</p>
+<p>前端报错==参数校验</p>
+<p>预测评测：<br>
+当感知版本 预测版本 + 评测版本一致时 使用上次的json来生成</p>
+<p>0： 总的<br>
+①错误码上线<br>
+②错误类型上线<br>
+③各种错误状态<br>
+④云上节点监控：日志、挂载目录<br>
+⑤ACK升级<br>
+⑥下载数据：使用分片现在 避免出现OOMkilled<br>
+⑦CCE云容器引擎：负载均衡，server多节点<br>
+⑧各个模块的技术文件撰写<br>
+⑨珊瑚的权限管理，只读 读写</p>
+<p>1：数据上盘：<br>
+① 优先级上盘分离为2个程序<br>
+② 加入错误信息发送<br>
+③ docker化容器部署<br>
+2：数据清洗：<br>
+〇逻辑梳理<br>
+① 数据下载 数据上传 日志上传全部改成SDK<br>
+3：数据处理<br>
+① 类似数据清洗<br>
+4：车端在线评测<br>
+① OD TFL 多进程在线订阅评测<br>
+5：感知回注：<br>
+① 回放推理与实际值<br>
+② 不合理的帧 推理与标注结果单独摘出来<br>
+③ 不同的entrypoint or command的启动方式<br>
+6：感知评价：<br>
+① 速度的优化:以单车来回灌<br>
+② 回灌的速度<br>
+7：预测评测：<br>
+① 预测ID-Map<br>
+② 预测回灌：启动方式<br>
+③ 评测速度</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每周工作]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/mei-zhou-gong-zuo/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/mei-zhou-gong-zuo/">
+        </link>
+        <updated>2023-02-27T01:15:48.000Z</updated>
+        <content type="html"><![CDATA[<p>在台架上面回灌：数据上传到oss2 需要使用172开头的host<br>
+在其他节点下载回灌的数据评测：数据从oss2上拉下来 需要使用10开头的host<br>
+注意：<br>
+1：k8s中如果需要将pod调度到不同的GPU上时，只需要在资源中加入nvidia.com/gpu: '1' ，且去除特权模式，但如果去除特权模式时 挂载的目录如果不存在，pod去创建时会报错，所有需要挂载已经存在的目录<br>
+#11-1  11-3<br>
+1：预测ros2<br>
+2:  数据上云规范<br>
+3：点云坐标系变化了：重构点云 重构评测</p>
+<p>#10-23 -10-31<br>
+1：预测2080镜像评测测试<br>
+2：定位评测<br>
+3：ros2提取图片<br>
+4：ros12ros2镜像构建<br>
+5：数据上云规范化</p>
+<p>#10-16-10-20<br>
+1：ros2的评测; od  move  tfl</p>
+<p>#10-8 --10-13<br>
+1：异形物的评测<br>
+2：适配wav上传 信息提取 海燕平台<br>
+3：数据上盘的日志并发上传<br>
+4：ros12ros2的数据转换<br>
+5:  ros2在2080上的运行</p>
+<p>#9-25 9-28<br>
+1：测试完成预测3090加速<br>
+2：预测报告改版更新<br>
+3：各个评测数据的帧数统计</p>
+<p>#9-18 9-22<br>
+1：预测加速 ，调度到3090 将2T的盘挂载为/nas 并拉取部分数据到盘上 ， 新的数据拉下来 回灌完删除<br>
+2：预测报告全面改版</p>
+<p>#9-11 9-15<br>
+1：数据切包<br>
+2：红绿灯数据抽帧送标<br>
+3：上云更新：上盘车号 端口 日期目录校验<br>
+4：预测评测加速测试</p>
+<p>#9-4  9-8<br>
+1：OD一般评测加速<br>
+2：TFL一般评测加速<br>
+3：OD车端报告更新</p>
+<p>#8-21 8-24<br>
+1：动静评测ros1 回灌与评测<br>
+2：切包 测试感知节点 挂载权重 分GPU运行</p>
+<p>#8-14 8-18<br>
+1：动静评测 加速度速度评测方案设计<br>
+2:  着手ros2的评测：节点的启动需要激活</p>
+<p>#8-7 8-11<br>
+1:  切换nas 感知2080<br>
+2：车号+数据包名称<br>
+3:   感知评测+预测评测逻辑，回注逻辑<br>
+4：record新版本测试</p>
+<p>#7-31 8-4<br>
+1:     适配新版本预测，预测作业在2080上可以使用：作业号81，播包速度为1:     0728<br>
+2:     修复数据集蜘蛛图<br>
+3：  修复ros2数据包中details 与软件版本显示不全<br>
+4：  增加采集时间</p>
+<p>#7-17 7-21<br>
+9：  预测数据回注<br>
+10：冷热数据<br>
+11：预测节点新版本无法启动问题定位<br>
+12:  obj2csv<br>
+13：数据回注问题：感知启动命令 tfl需挂载标定文件 并且依赖不同地点地图 wm节点启动需要挂载3个目录</p>
+<p>#7-10 7-14<br>
+1：动静态数据评测<br>
+2：数据标注适配calib<br>
+3：感知评分重构<br>
+4：数据集统计：蜘蛛图<br>
+5：回归任务json重构<br>
+6：红绿灯回注<br>
+7：数据集导出到PAI：由xjy自导<br>
+8：数据清洗：海燕平台适配</p>
+<p>#7-3 7-7<br>
+1： 红绿灯回灌 红绿灯评测<br>
+2： 评测重构total数据<br>
+3： 预测回灌<br>
+4:    预测2080先试试s</p>
+<p>#6-26 6-30<br>
+1：预测评测报告生成+报告上云<br>
+2：紧急适配 后缀为db3的数据<br>
+3:   红绿灯回灌 红绿灯评测 评测重构  预测回灌 /  2080台架OD ++++ TFL的试用<br>
+4：感知数据集的报告：历史的重跑</p>
+<p>#6-19 6-21<br>
+1：修复预测mapping的BUG<br>
+2：OOMkilled：rocord 清洗 ---&gt; 重构 ；使用s3cmd下载<br>
+3：重构预测：通过api接口获取数据包的ID -----------&gt;</p>
+<p>#6-12 6-16<br>
+1：距离打标处理器<br>
+2：2080GPU<br>
+3：ros2数据清洗<br>
+4：数据转录的分片下载<br>
+5:   tfl标注 评测</p>
+<p>#6月5 6月8<br>
+1：预测改版 增加到1k包 增加行人 非机动车 类别评测<br>
+2：红绿灯车端评测<br>
+3：红绿灯标注 数据筛选脚本<br>
+4：线上数据转录 数据清洗bug修复<br>
+5：ros2的数据转录修改代码 上线</p>
+<p>#5-29   6-02<br>
+6：台架的试用<br>
+7：红绿的wide摄像头测试<br>
+2：数据上云加入  仿真报告</p>
+<p>#-------5-22  5-26 ------------------<br>
+1：数据清洗index数据包保存，丢帧的特定topic<br>
+8：数据上云加入  数采数据的分类<br>
+3：TFL重构-检视代码、 重构代码<br>
+5:  ros2的数据清洗<br>
+9：数据清洗的报告<br>
+4：感知回放增加2路摄像头+1路lidar</p>
+<p>#-----ones1<br>
+增加路测、数采数据量统计功能<br>
+根据车号名称进行按项目分类：<br>
+HX——海象<br>
+HK——海葵<br>
+其他——海螺<br>
+#-----ones2<br>
+通过数据处理的数据实现按部门分类<br>
+转录、仿真CSV-——仿真组<br>
+制图、定位打标——地图组<br>
+预测CSV——预测组<br>
+语音识别——座舱组<br>
+感知LOG——融合组</p>
+<p>#5-15  5-19<br>
+1：感知回注：增加world_model节点；增加新旧topic进行回放，<br>
+docker-compose网络隔离 :使用特定的网络<br>
+k8s网络隔离：使用localhots:11311<br>
+2：红绿灯评测： 重构json：综合评分以及蜘蛛图，回灌固定镜像apal1.6.1_1.3.14_230510.1_test_evaluation_mode_commit2； 红绿灯评测<br>
+3：与api-server测试1，2<br>
+4：更新车端OD报告模板</p>
+<p>#5-8  5-12<br>
+重构预测评测：ade fde增加正负值；增加miss_rate，增加中文。增加4个场景+48个包<br>
+红绿灯评测：回灌 本地测试<br>
+感知回注：本地测试</p>
+<p>#5-4<br>
+重构数据清洗<br>
+重构预测评测：json格式更改<br>
+红绿灯评测：标注 与 检测 匹配 对比</p>
+<p>#4月23-4月28<br>
+预测报告<br>
+感知报告<br>
+车端评测<br>
+标注对接xjy</p>
+<p>#4月17-4月21<br>
+测试：数据上盘 数据清洗 ros2 预测评测</p>
+<p>#4月10-4月14<br>
+1：ros2全链路测试：清洗 评测<br>
+数据上云：<br>
+<img src="https://github.com/sudanorsu/sudanorsu.github.io/post-images/1681121834949.jpg" alt="" loading="lazy"><br>
+2：车端感知评测上云 TFL、OD：json --&gt;车号 软件版本 评测类型 评测开始时间 评测结束时间<br>
+{车号}/20230407/perception_evaluate/TFL_2023-04-07-11-07-23.json<br>
+{车号}/20230407/perception_evaluate/OD_2023-04-07-11-07-23.json<br>
+3:   ros2的db3数据上云<br>
+4：珊瑚磁盘插盘个数识别<br>
+5:   预测评测回归：数据池   启动任务：拉取最新的感知 以及待评价的预测进行评测<br>
+6:   ros2 定位消息桥接工具:接收ros1消息 发出ros2消息<br>
+7：ros2 录包工具：录制感知消息<br>
+8：找时间适配一版，为了区分是没有召回，后续评测进行不下去而失败；还是评测链路存在问题。</p>
+<p>#4月3-4月7<br>
+1：修复bus评测时 np.loadtxt的bug<br>
+2：修复锥桶 评测角度的bug<br>
+3：ros2数据清洗<br>
+4：ros2感知评价</p>
+<p>#3月27-3月31<br>
+1：数据集指标统计 100%<br>
+2：ros2  50%<br>
+3：定位打标 对接与测试done<br>
+4：data-core c++框架done。<br>
+5:  配置自动拉取镜像<br>
+imagePullSecrets:<br>
+- name: saic-at</p>
+<p>#3月22 3月24<br>
+1：语音识别进入data-core框架<br>
+2：特种车评测</p>
+<p>#3月13-3月16<br>
+1:  行人评测：验收 错误抛出done<br>
+2:  卡车评测：完成done<br>
+3：ros2<br>
+4：感知组日志镜像编码框架<br>
+待定：感知回灌的结果 进行回放</p>
+<p>#3月6-3月10<br>
+1:  预测组的流水线：后端done 已测<br>
+2:  数据集10类数据统计开发：后端done 已测<br>
+3：溯源导出的数据：后端done  已测<br>
+4：行人评测：回灌60clip 已测<br>
+5：wav提取：后端done 已测<br>
+6：对齐感知评测： 训练端 模型端 标注端的map关系 已测<br>
+##--附加：<br>
+ros2:只涉及data-core的改版<br>
+数据清洗改版上线：data2clean<br>
+数据处理改版上线：data2record(高)、data2sim-csv(杨)、data2pre-csv(周）、data2map(祁)<br>
+评测数据改版上线：回灌-依赖定位、感知节点<br>
+1：预计工作量5人天<br>
+工作项1：3月10系统组构建镜像ros1-bridge-ros2 ,线下自己播放ros1的bag得到新的ros2的bag<br>
+工作项2：重新构建基础镜像+安装依赖三方件<br>
+工作项3：测试更改数据清洗<br>
+2：预计工作量5人天<br>
+数据处理: 需要上面4位同事配合改版<br>
+3：预计工作量5人天<br>
+评测数据：回灌强依赖定位感知节点、取bag种感知输出(跟1种思路一致)</p>
+<p>#2月27-3月3<br>
+1：更新评测json数据至第四版<br>
+2：检视并更新data2csv至第三版本<br>
+3：开发完成评测感知线上流程，并开始联调80%<br>
+4：手动导入4clip数据<br>
+5：数据集10类数据统计开发：20%</p>
+<p>#2月20-2月24<br>
+1：修复record的版本到第五个版本：<br>
+① 将从挂载目录中取文件改成：利用s3的sdk下载文件<br>
+② 将数据上传至挂载目录改成：利用oss2的sdk上传文件<br>
+2：测试上盘服务功能：<br>
+①：增加仿真文件上传 ，增加2个类型：SIM_LOG SIM_CSV<br>
+②：增加WAV文件上传<br>
+③：安亭上盘机测试上盘服务功能：bugfix<br>
+3：感知评测：<br>
+①评测流程：真值数据集，回灌生成评测数据集，模型评估。进行整理形成流水线data-core<br>
+4：预测流水线：<br>
+①沟通具体需求：周冯提交转csv脚本</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[杂谈]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/za-tan/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/za-tan/">
+        </link>
+        <updated>2023-02-23T09:48:44.000Z</updated>
+        <content type="html"><![CDATA[<p>CV实战项目</p>
+<p>项目一：图片分类<br>
+项目二：人脸对齐<br>
+项目三：人脸属性分析<br>
+项目四：人脸检测<br>
+项目五：行人属性检测<br>
+项目六：行人车俩检测<br>
+项目七：图融合优化及网络轻量化（边缘端设备）实现<br>
+项目八：深度学习神经网络写藏头诗<br>
+项目九：医疗影像（CT）分割<br>
+项目十：人体运动姿态跟踪与识别<br>
+项目十一：AIGC以文生图（最新）</p>
+<p>NLP实战项目<br>
+NLP实战项</p>
+<p>项目一：文本分类<br>
+项目二：语言模型<br>
+项目三：序列标注<br>
+项目四：文本匹配<br>
+项目五：文本生成<br>
+项目六：知识图谱</p>
+<p>ros2<br>
+消息提醒<br>
+预测评测服务</p>
+<figure data-type="image" tabindex="1"><img src="https://github.com/sudanorsu/sudanorsu.github.io/post-images/1691579492931.png" alt="" loading="lazy"></figure>
+<p>hadoop<br>
+数据仓</p>
+<p>⾼高内聚、低耦合、可扩展、可复⽤用<br>
+泛化：son   实线空心三角箭头 father<br>
+实现:  bird   虚线空心三角箭头  flyinterface :  实现类指向接口<br>
+依赖：classA   虚线箭头   classB                  ：一个类的实现需要另一个类的协助<br>
+关联：classA   实线箭头   classB                  ：一个类的全局变量引用了另一个类<br>
+聚合：classA  尾部为空心菱形的实线箭头 classB ：A由于B C组成<br>
+组合</p>
+<p>创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。<br>
+结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。<br>
+行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
+<p>设计模式的六大原则：<br>
+开闭原则 单一职责原则  里氏替换原则 依赖倒转原则 接口隔离原则 迪米特法则 合成复用原则</p>
+<p>可信考试科目：<br>
+科目一：上级编程，对比力扣2道中等、1道困难；<br>
+科目二：编程知识与应用，考察基础的编程语言知识等；<br>
+科目三：安全编程、质量、隐私，还有开发者测试等；<br>
+科目四：重构知识，包括设计模式、代码重构等。</p>
+<p>亲爱的余绍菊小姐:<br>
+谢谢你，让我成为那个可以陪你走完人生旅途的人。三年前第一次遇见你的场景还历历在目，三年的时间过得很快，但是我们却像认识了很久很久。<br>
+这三年里，我们一起去内蒙古感受草原沙漠的风光，一起在长沙喝着装有夏天味道的茶颜悦色、在重庆品尝又麻又辣的火锅，我们经历过琐碎的争吵，度过疫情的封控，参与过购物的开心，我们完成了婚纱照的拍摄，新房的购买，装修，入住以及现在婚礼的举办。你的美丽大方，你的善解人意，从你身上我学到很多优良的品质和更好的生活习惯，我也会追随本心，像你学习，共同进步。<br>
+此刻你美的像个仙子一样，美丽而神圣的站在我的面前，在东海在滨江森林公园旁，在父母和亲朋好友的见证下，举办我们的婚礼，我想我此时此刻是最幸福的人，我会用我的一生让你幸福。希望等我们老了，回首过去，会觉得此生无憾！我爱你！老婆。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日工作]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/mei-ri-gong-zuo/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/mei-ri-gong-zuo/">
+        </link>
+        <updated>2023-02-23T06:03:13.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<p>#2023/03/02<br>
+1：评测感知数据联调<br>
+2：数据集10类统计帧数：40%<br>
+3：继续更新评测结果son格式：第四版</p>
+<p>#2023/03/02<br>
+1：评测数据4clip：原始数据 原始bag包溯源，并导入标注平台<br>
+2：数据集10类统计帧数：30%<br>
+3：继续更新评测结果son格式：第三版</p>
+<p>#2023/03/01<br>
+1：继续更新评测结果son格式：第二版<br>
+2：评测的标注数据，送标 导入更改，加入project tag data_usage</p>
+<p>#2023/02/28<br>
+1：完成评测数据json格式：第一版本<br>
+2：data2csv第3版本更新</p>
+<p>#2023/02/27<br>
+1：完成数据上盘上线<br>
+2：完成感知线上data-core流程<br>
+3：完成待办事件中的1</p>
+<hr>
+<p>#2023/02/24<br>
+1：感知评测：<br>
+①评测流程：真值数据集，回灌生成评测数据集，模型评估。进行整理形成流水线<br>
+2：安亭上盘机测试上盘服务功能：<br>
+①仿真zip；仿真log；bag wav；</p>
+<p>#2023/02/23<br>
+1：修复record的版本到第五个版本：<br>
+① 将从挂载目录中取文件改成：利用s3的sdk下载文件<br>
+② 将数据上传至挂载目录改成：利用oss2的sdk上传文件<br>
+2：测试上盘服务功能：<br>
+①：增加仿真文件上传 ，增加2个类型：SIM_LOG SIM_CSV<br>
+②：增加WAV文件上传</p>
+<p>#---------------待办：--------------------<br>
+1：标注数据中 camera数据 xxx.jpg 名字，与lidar中xxxx.jpg 名字不一致，需要修改data-cloud的镜像脚本 done<br>
+2：新的clip数据待送标需要上传1份</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一篇博客]]></title>
+        <id>https://github.com/sudanorsu/sudanorsu.github.io/post/di-yi-pian-bo-ke/</id>
+        <link href="https://github.com/sudanorsu/sudanorsu.github.io/post/di-yi-pian-bo-ke/">
+        </link>
+        <updated>2023-02-21T06:02:04.000Z</updated>
+        <content type="html"><![CDATA[<p>这是我的世界</p>
+<p>我的github token ：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</p>
+]]></content>
+    </entry>
+</feed>
